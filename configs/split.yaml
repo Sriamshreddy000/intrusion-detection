@@ -1,0 +1,7 @@
+# Time-based split — never random, see methodology notes.
+# train: [data start, train_end)   test: [train_end, data end]
+# Chosen so train covers a full year (enough history for rolling
+# per-entity baselines) and test holds out the last ~4.5 months,
+# which carries ~25% of malicious user-days under both label
+# definitions — a reasonably balanced, non-trivial test period.
+train_end: "2011-01-01"

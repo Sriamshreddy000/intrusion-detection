@@ -1,0 +1,254 @@
+{
+  "tag": "iter4_mode_deviation_tuned_zscore",
+  "timestamp": "2026-10-07T06:09:10.580670+00:00",
+  "target": "label_event_day",
+  "n_train": 246423,
+  "n_positives_train": 722,
+  "n_test": 84029,
+  "scale_pos_weight": 340.30609418282546,
+  "model_params": {
+    "objective": "binary",
+    "n_estimators": 300,
+    "num_leaves": 15,
+    "learning_rate": 0.05,
+    "min_child_samples": 20,
+    "scale_pos_weight": 340.30609418282546,
+    "random_state": 42,
+    "verbosity": -1
+  },
+  "feature_cols": [
+    "n_logons",
+    "n_usb_connects",
+    "n_file_copies",
+    "n_emails_sent",
+    "n_emails_external",
+    "n_http_visits",
+    "is_new_pc_today",
+    "active_hours",
+    "first_logon_hour",
+    "last_logon_hour",
+    "is_weekend",
+    "is_after_hours",
+    "any_session_after_hours",
+    "days_since_last_activity",
+    "n_file_copies_ratio_30d",
+    "n_emails_sent_ratio_30d",
+    "n_emails_external_ratio_30d",
+    "n_usb_connects_ratio_30d",
+    "n_http_visits_ratio_30d",
+    "n_logons_ratio_30d",
+    "active_hours_ratio_30d",
+    "n_file_copies_diff_from_mode_30d",
+    "n_file_copies_differs_from_mode_30d",
+    "n_emails_sent_diff_from_mode_30d",
+    "n_emails_sent_differs_from_mode_30d",
+    "n_emails_external_diff_from_mode_30d",
+    "n_emails_external_differs_from_mode_30d",
+    "n_usb_connects_diff_from_mode_30d",
+    "n_usb_connects_differs_from_mode_30d",
+    "n_http_visits_diff_from_mode_30d",
+    "n_http_visits_differs_from_mode_30d",
+    "n_logons_diff_from_mode_30d",
+    "n_logons_differs_from_mode_30d",
+    "active_hours_zscore_30d",
+    "first_logon_hour_zscore_30d"
+  ],
+  "pr_auc": 0.0030129930687888555,
+  "precision_at_k": {
+    "test_days": 137,
+    "n_positives_test": 244,
+    "n_malicious_users_test": 18,
+    "1": {
+      "alerts_per_day": 1,
+      "alert_budget_total": 137,
+      "alerts_caught": 0,
+      "precision": 0.0,
+      "catch_rate": 0.0,
+      "distinct_users_caught": 0,
+      "distinct_users_total": 18,
+      "distinct_user_catch_rate": 0.0
+    },
+    "2": {
+      "alerts_per_day": 2,
+      "alert_budget_total": 274,
+      "alerts_caught": 0,
+      "precision": 0.0,
+      "catch_rate": 0.0,
+      "distinct_users_caught": 0,
+      "distinct_users_total": 18,
+      "distinct_user_catch_rate": 0.0
+    },
+    "5": {
+      "alerts_per_day": 5,
+      "alert_budget_total": 685,
+      "alerts_caught": 6,
+      "precision": 0.008759124087591242,
+      "catch_rate": 0.02459016393442623,
+      "distinct_users_caught": 4,
+      "distinct_users_total": 18,
+      "distinct_user_catch_rate": 0.2222222222222222
+    },
+    "10": {
+      "alerts_per_day": 10,
+      "alert_budget_total": 1370,
+      "alerts_caught": 8,
+      "precision": 0.00583941605839416,
+      "catch_rate": 0.03278688524590164,
+      "distinct_users_caught": 5,
+      "distinct_users_total": 18,
+      "distinct_user_catch_rate": 0.2777777777777778
+    },
+    "20": {
+      "alerts_per_day": 20,
+      "alert_budget_total": 2740,
+      "alerts_caught": 8,
+      "precision": 0.00291970802919708,
+      "catch_rate": 0.03278688524590164,
+      "distinct_users_caught": 5,
+      "distinct_users_total": 18,
+      "distinct_user_catch_rate": 0.2777777777777778
+    }
+  },
+  "feature_importance": [
+    [
+      "n_http_visits_ratio_30d",
+      352
+    ],
+    [
+      "active_hours",
+      282
+    ],
+    [
+      "n_usb_connects_ratio_30d",
+      277
+    ],
+    [
+      "n_emails_sent_ratio_30d",
+      272
+    ],
+    [
+      "first_logon_hour",
+      264
+    ],
+    [
+      "first_logon_hour_zscore_30d",
+      245
+    ],
+    [
+      "last_logon_hour",
+      239
+    ],
+    [
+      "n_logons_ratio_30d",
+      229
+    ],
+    [
+      "n_file_copies_diff_from_mode_30d",
+      159
+    ],
+    [
+      "n_emails_external_ratio_30d",
+      152
+    ],
+    [
+      "active_hours_zscore_30d",
+      132
+    ],
+    [
+      "n_usb_connects_diff_from_mode_30d",
+      131
+    ],
+    [
+      "n_http_visits_diff_from_mode_30d",
+      130
+    ],
+    [
+      "n_emails_external_diff_from_mode_30d",
+      125
+    ],
+    [
+      "n_file_copies_ratio_30d",
+      121
+    ],
+    [
+      "active_hours_ratio_30d",
+      120
+    ],
+    [
+      "n_file_copies",
+      78
+    ],
+    [
+      "n_emails_external",
+      70
+    ],
+    [
+      "n_emails_sent",
+      56
+    ],
+    [
+      "n_http_visits",
+      53
+    ],
+    [
+      "n_emails_sent_diff_from_mode_30d",
+      52
+    ],
+    [
+      "n_usb_connects",
+      49
+    ],
+    [
+      "n_http_visits_differs_from_mode_30d",
+      45
+    ],
+    [
+      "n_logons",
+      39
+    ],
+    [
+      "n_logons_diff_from_mode_30d",
+      28
+    ],
+    [
+      "days_since_last_activity",
+      20
+    ],
+    [
+      "n_file_copies_differs_from_mode_30d",
+      19
+    ],
+    [
+      "n_usb_connects_differs_from_mode_30d",
+      17
+    ],
+    [
+      "is_weekend",
+      9
+    ],
+    [
+      "n_logons_differs_from_mode_30d",
+      9
+    ],
+    [
+      "is_new_pc_today",
+      8
+    ],
+    [
+      "n_emails_sent_differs_from_mode_30d",
+      7
+    ],
+    [
+      "n_emails_external_differs_from_mode_30d",
+      7
+    ],
+    [
+      "any_session_after_hours",
+      6
+    ],
+    [
+      "is_after_hours",
+      1
+    ]
+  ]
+}

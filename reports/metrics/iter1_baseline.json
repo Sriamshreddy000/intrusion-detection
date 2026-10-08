@@ -1,0 +1,184 @@
+{
+  "tag": "iter1_baseline_27features",
+  "timestamp": "2026-10-06T05:56:16.951419+00:00",
+  "target": "label_event_day",
+  "n_train": 246423,
+  "n_positives_train": 722,
+  "n_test": 84029,
+  "scale_pos_weight": 340.30609418282546,
+  "model_params": {
+    "objective": "binary",
+    "n_estimators": 300,
+    "num_leaves": 15,
+    "learning_rate": 0.05,
+    "min_child_samples": 20,
+    "scale_pos_weight": 340.30609418282546,
+    "random_state": 42,
+    "verbosity": -1
+  },
+  "feature_cols": [
+    "n_logons",
+    "n_usb_connects",
+    "n_file_copies",
+    "n_emails_sent",
+    "n_emails_external",
+    "n_http_visits",
+    "is_new_pc_today",
+    "active_hours",
+    "first_logon_hour",
+    "is_weekend",
+    "is_after_hours",
+    "days_since_last_activity",
+    "n_file_copies_ratio_30d",
+    "n_file_copies_zscore_30d",
+    "n_emails_sent_ratio_30d",
+    "n_emails_sent_zscore_30d",
+    "n_emails_external_ratio_30d",
+    "n_emails_external_zscore_30d",
+    "n_usb_connects_ratio_30d",
+    "n_usb_connects_zscore_30d",
+    "n_http_visits_ratio_30d",
+    "n_http_visits_zscore_30d",
+    "n_logons_ratio_30d",
+    "n_logons_zscore_30d",
+    "active_hours_ratio_30d",
+    "active_hours_zscore_30d",
+    "first_logon_hour_zscore_30d"
+  ],
+  "pr_auc": 0.9117003208340018,
+  "precision_at_k": {
+    "test_days": 137,
+    "n_positives_test": 244,
+    "50": {
+      "alerts_per_day": 50,
+      "alert_budget_total": 6850,
+      "alerts_caught": 233,
+      "precision": 0.034014598540145984,
+      "catch_rate": 0.9549180327868853
+    },
+    "100": {
+      "alerts_per_day": 100,
+      "alert_budget_total": 13700,
+      "alerts_caught": 233,
+      "precision": 0.017007299270072992,
+      "catch_rate": 0.9549180327868853
+    },
+    "200": {
+      "alerts_per_day": 200,
+      "alert_budget_total": 27400,
+      "alerts_caught": 234,
+      "precision": 0.008540145985401459,
+      "catch_rate": 0.9590163934426229
+    }
+  },
+  "feature_importance": [
+    [
+      "n_http_visits",
+      658
+    ],
+    [
+      "n_http_visits_zscore_30d",
+      515
+    ],
+    [
+      "n_usb_connects",
+      332
+    ],
+    [
+      "n_http_visits_ratio_30d",
+      291
+    ],
+    [
+      "active_hours",
+      289
+    ],
+    [
+      "n_usb_connects_zscore_30d",
+      251
+    ],
+    [
+      "n_usb_connects_ratio_30d",
+      209
+    ],
+    [
+      "n_emails_sent_zscore_30d",
+      207
+    ],
+    [
+      "n_file_copies_zscore_30d",
+      206
+    ],
+    [
+      "n_emails_sent_ratio_30d",
+      169
+    ],
+    [
+      "first_logon_hour",
+      121
+    ],
+    [
+      "first_logon_hour_zscore_30d",
+      112
+    ],
+    [
+      "active_hours_ratio_30d",
+      108
+    ],
+    [
+      "active_hours_zscore_30d",
+      102
+    ],
+    [
+      "n_file_copies",
+      93
+    ],
+    [
+      "n_file_copies_ratio_30d",
+      91
+    ],
+    [
+      "n_emails_external_ratio_30d",
+      80
+    ],
+    [
+      "n_emails_external_zscore_30d",
+      79
+    ],
+    [
+      "n_logons_zscore_30d",
+      67
+    ],
+    [
+      "n_logons_ratio_30d",
+      54
+    ],
+    [
+      "n_emails_external",
+      39
+    ],
+    [
+      "n_logons",
+      35
+    ],
+    [
+      "days_since_last_activity",
+      32
+    ],
+    [
+      "is_weekend",
+      31
+    ],
+    [
+      "n_emails_sent",
+      16
+    ],
+    [
+      "is_after_hours",
+      11
+    ],
+    [
+      "is_new_pc_today",
+      2
+    ]
+  ]
+}

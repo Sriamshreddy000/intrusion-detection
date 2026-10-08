@@ -1,0 +1,198 @@
+{
+  "tag": "iter2_tightened",
+  "test_days": 137,
+  "n_positives_test": 244,
+  "scale_pos_weight": 340.30609418282546,
+  "1": {
+    "alerts_per_day": 1,
+    "alert_budget_total": 137,
+    "alerts_caught": 136,
+    "precision": 0.9927007299270073,
+    "catch_rate": 0.5573770491803278,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 6,
+        "catch_rate": 0.375
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 129,
+        "catch_rate": 0.5707964601769911
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 1,
+        "catch_rate": 0.5
+      }
+    }
+  },
+  "2": {
+    "alerts_per_day": 2,
+    "alert_budget_total": 274,
+    "alerts_caught": 226,
+    "precision": 0.8248175182481752,
+    "catch_rate": 0.9262295081967213,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 13,
+        "catch_rate": 0.8125
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 211,
+        "catch_rate": 0.9336283185840708
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 2,
+        "catch_rate": 1.0
+      }
+    }
+  },
+  "5": {
+    "alerts_per_day": 5,
+    "alert_budget_total": 685,
+    "alerts_caught": 229,
+    "precision": 0.3343065693430657,
+    "catch_rate": 0.9385245901639344,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 13,
+        "catch_rate": 0.8125
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 214,
+        "catch_rate": 0.9469026548672567
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 2,
+        "catch_rate": 1.0
+      }
+    }
+  },
+  "10": {
+    "alerts_per_day": 10,
+    "alert_budget_total": 1370,
+    "alerts_caught": 229,
+    "precision": 0.16715328467153284,
+    "catch_rate": 0.9385245901639344,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 13,
+        "catch_rate": 0.8125
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 214,
+        "catch_rate": 0.9469026548672567
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 2,
+        "catch_rate": 1.0
+      }
+    }
+  },
+  "20": {
+    "alerts_per_day": 20,
+    "alert_budget_total": 2740,
+    "alerts_caught": 229,
+    "precision": 0.08357664233576642,
+    "catch_rate": 0.9385245901639344,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 13,
+        "catch_rate": 0.8125
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 214,
+        "catch_rate": 0.9469026548672567
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 2,
+        "catch_rate": 1.0
+      }
+    }
+  },
+  "50": {
+    "alerts_per_day": 50,
+    "alert_budget_total": 6850,
+    "alerts_caught": 232,
+    "precision": 0.03386861313868613,
+    "catch_rate": 0.9508196721311475,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 14,
+        "catch_rate": 0.875
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 216,
+        "catch_rate": 0.9557522123893806
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 2,
+        "catch_rate": 1.0
+      }
+    }
+  },
+  "100": {
+    "alerts_per_day": 100,
+    "alert_budget_total": 13700,
+    "alerts_caught": 233,
+    "precision": 0.017007299270072992,
+    "catch_rate": 0.9549180327868853,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 15,
+        "catch_rate": 0.9375
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 216,
+        "catch_rate": 0.9557522123893806
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 2,
+        "catch_rate": 1.0
+      }
+    }
+  },
+  "200": {
+    "alerts_per_day": 200,
+    "alert_budget_total": 27400,
+    "alerts_caught": 233,
+    "precision": 0.008503649635036496,
+    "catch_rate": 0.9549180327868853,
+    "by_scenario": {
+      "1.0": {
+        "total": 16,
+        "caught": 15,
+        "catch_rate": 0.9375
+      },
+      "2.0": {
+        "total": 226,
+        "caught": 216,
+        "catch_rate": 0.9557522123893806
+      },
+      "3.0": {
+        "total": 2,
+        "caught": 2,
+        "catch_rate": 1.0
+      }
+    }
+  }
+}
